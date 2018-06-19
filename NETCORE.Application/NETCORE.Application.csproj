@@ -5,16 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Implementation\" />
-    <Folder Include="AutoMapper\" />
-    <Folder Include="ViewModels\" />
+    <ProjectReference Include="..\NETCORE.Data.EF\NETCORE.Data.EF.csproj" />
+    <ProjectReference Include="..\NETCORE.Data\NETCORE.Data.csproj" />
+    <ProjectReference Include="..\NETCORE.Infrastructure\NETCORE.Infrastructure.csproj" />
+    <ProjectReference Include="..\NETCORE.Utilities\NETCORE.Utilities.csproj" />
+    <ProjectReference Include="..\NETCORE\NETCORE.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NETCORE.Data.EF\NETCORE.Data.EF.csproj" />
-    <ProjectReference Include="..\NETCORE.Data\NETCORE.Data.csproj" />
-    <ProjectReference Include="..\NETCORE.Utilities\NETCORE.Utilities.csproj" />
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
   </ItemGroup>
 
 </Project>
